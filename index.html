@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body {
+    font-family: "Lato", sans-serif
+  }
+
+  .slide-caption b {
+    font-size: 32px;
+  }
+.media-body {
+  text-align: left;
+  margin-left: 30px;
+}
+.w3-caption {
+  color:darkgray;
+}
+  .mySlides {
+    display: none
+  }
+  .text-primary {
+    color: #ff5e3a !important;
+  }
+  .list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+.event-schedule .date .day {
+    background: #f5d9d9 !important;
+    color: #ff5e3a !important;
+    box-shadow: 0px 0px 2px 0.25px rgba(47, 85, 212, 0.5);
+}
+.event-schedule .date .day {
+    font-size: 18px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: rgba(47,85,212,0.1);
+    line-height: 48px;
+    border: 2px solid #fff;
+    }
+  .card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    }
+  .slide-caption-title {
+    color: inherit;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    font-family: proxima-nova, sans-serif;
+    font-size: 3em;
+    text-transform: uppercase;
+  }
+
+  .sow-sub-headline {
+    text-align: left;
+    color: #353538;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  /* .logo {
+    background-color: #ff5e3a;
+  } */
+  .w3-top {
+    text-transform: uppercase;
+  }
+
+  .w3-black,
+  .w3-hover-black:hover {
+    color: #fff !important;
+    background-color: #ff5e3a !important;
+  }
+  
+  .w3-bar {
+    padding: 10px;
+  }
+
+  footer {
+    padding: 10px;
+  }
+
+  .so-widget-key-features-widget-key-feature-widget-style-1-c11cb4782b81 .knowledge-box .keyFeatureTitle {
+    color: #353538;
+    font-size: 16px;
+    padding: 5px 0;
+    line-height: 28px;
+    font-weight: 600;
+  }
+
+  .siteorigin-panels-stretch {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .listing-with-img {
+    text-align: left;
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .left {
+    text-align: left;
+  }
+
+  .listing-with-img ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+  }
+
+  .listing-with-img ul li {
+    font-size: 16px;
+    line-height: 30px;
+    color: #393E60;
+    margin-bottom: 15px;
+    position: relative;
+    padding: 0 0 0 60px;
+  }
+  .text-dark {
+    text-decoration: none;
+  }
+  .card-body {
+    padding: 1.5rem;
+    flex: 1 1 auto;
+    min-height: 1px;
+  }
+  .media {
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+.btn-sm {
+  padding: 7px 16px;
+    font-size: 10px;
+    color: #ff5e3a;
+}
+.btn {
+  font-weight: 600;
+    border-radius: 6px;
+}
+.btn-outline-primary {
+    border: 1px solid #ff5e3a;
+    color: #ff5e3a;
+    font-size: 12px;
+    text-decoration: none;
+}
+  @media (max-width: 780px) {
+    .siteorigin-panels-stretch {
+      flex-direction: column;
+    }
+  }
+</style>
+
+<body>
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)"
+        onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large logo">HOME</a>
+
+      <div class="w3-right w3-hide-small">
+        <a href="#volta" class="w3-bar-item w3-button">Volta Community Login</a>
+        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+      </div>
+    </div>
+    <!-- <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a> -->
+  </div>
+  </div>
+
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">VIRTUAL EVENT PLATFORM</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  </div>
+
+  <!-- Page content -->
+  <div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+    <!-- Automatic Video  -->
+    <div class="w3-display-container w3-center">
+      <video alt="Indian manager standing at office table discussing project with team Confident young female indian professional leader manager standing at office table discussing new project ideas with diverse team employees teaching corporate staff during training workshop meeting 4K Resolution Stock Footage Video" autoplay muted controls="controls" controlslist="nodownload" loop="true" src="https://media.istockphoto.com/videos/indian-manager-standing-at-office-table-discussing-project-with-team-video-id1200288811" style="width: 100%;"></video>
+      <div class="w3-display-middle w3-container w3-caption w3-padding-32 w3-hide-small">
+        <h1 class="slide-caption-title">volta community platform</h1>
+        <p class="slide-caption"><b>Canada’s East Coast Innovation Hub</b></p>
+      </div>
+    </div>
+
+    <!-- The Band Section -->
+    <div class="w3-container w3-content w3-center" style="max-width:1200px" id="volta">
+      <div class="w3-row w3-padding-32 siteorigin-panels-stretch panel-row-style panel-row-style-for-4729-3"
+        data-stretch-type="full">
+        <div id="pgc-4729-3-0" class="panel-grid-cell">
+          <div id="panel-4729-3-0-0"
+            class="so-panel widget widget_key-features-widget panel-first-child panel-last-child" data-index="4">
+            <div
+              class="so-widget-key-features-widget so-widget-key-features-widget-key-feature-widget-style-1-c11cb4782b81">
+              <div class="knowledge-box">
+                <img alt="Live Sessions" class="thumb ls-is-cached lazyloaded"
+                  src="https://hubilo.com/wp-content/uploads/Group-15970.svg">
+                <h3 class="keyFeatureTitle">Live Sessions</h3>
+                <div class="so-widget-button-widget so-widget-button-widget-style1-f6ae5d26ae51"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="pgc-4729-3-1" class="panel-grid-cell">
+          <div id="panel-4729-3-1-0"
+            class="so-panel widget widget_key-features-widget panel-first-child panel-last-child" data-index="5">
+            <div
+              class="so-widget-key-features-widget so-widget-key-features-widget-key-feature-widget-style-1-c11cb4782b81">
+              <div class="knowledge-box">
+                <img alt="Breakout &amp; Demo Rooms" data-src="https://hubilo.com/wp-content/uploads/Group-15979.png"
+                  class="thumb ls-is-cached lazyloaded" src="https://hubilo.com/wp-content/uploads/Group-15979.png">
+                <h3 class="keyFeatureTitle">Breakout &amp; Demo Rooms</h3>
+                <div class="so-widget-button-widget so-widget-button-widget-style1-f6ae5d26ae51"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="pgc-4729-3-2" class="panel-grid-cell">
+          <div id="panel-4729-3-2-0"
+            class="so-panel widget widget_key-features-widget panel-first-child panel-last-child" data-index="6">
+            <div
+              class="so-widget-key-features-widget so-widget-key-features-widget-key-feature-widget-style-1-c11cb4782b81">
+              <div class="knowledge-box">
+                <img alt="Virtual Booths" data-src="https://hubilo.com/wp-content/uploads/Group-15968.png"
+                  class="thumb ls-is-cached lazyloaded" src="https://hubilo.com/wp-content/uploads/Group-15968.png">
+                <h3 class="keyFeatureTitle">Virtual Booths</h3>
+                <div class="so-widget-button-widget so-widget-button-widget-style1-f6ae5d26ae51"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="pgc-4729-3-3" class="panel-grid-cell">
+          <div id="panel-4729-3-3-0"
+            class="so-panel widget widget_key-features-widget panel-first-child panel-last-child" data-index="7">
+            <div
+              class="so-widget-key-features-widget so-widget-key-features-widget-key-feature-widget-style-1-c11cb4782b81">
+              <div class="knowledge-box">
+                <img alt="Networking" data-src="https://hubilo.com/wp-content/uploads/Group-15972.png"
+                  class="thumb ls-is-cached lazyloaded" src="https://hubilo.com/wp-content/uploads/Group-15972.png">
+                <h3 class="keyFeatureTitle">Networking</h3>
+                <div class="so-widget-button-widget so-widget-button-widget-style1-f6ae5d26ae51"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="pgc-4729-3-4" class="panel-grid-cell">
+          <div id="panel-4729-3-4-0"
+            class="so-panel widget widget_key-features-widget panel-first-child panel-last-child" data-index="8">
+            <div
+              class="so-widget-key-features-widget so-widget-key-features-widget-key-feature-widget-style-1-c11cb4782b81">
+              <div class="knowledge-box">
+                <img alt="One-on-One Meets" data-src="https://hubilo.com/wp-content/uploads/Group-15969.png"
+                  class="thumb ls-is-cached lazyloaded" src="https://hubilo.com/wp-content/uploads/Group-15969.png">
+                <h3 class="keyFeatureTitle">One-on-One Meets</h3>
+                <div class="so-widget-button-widget so-widget-button-widget-style1-f6ae5d26ae51"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="pgc-4729-3-5" class="panel-grid-cell">
+          <div id="panel-4729-3-5-0"
+            class="so-panel widget widget_key-features-widget panel-first-child panel-last-child" data-index="9">
+            <div
+              class="so-widget-key-features-widget so-widget-key-features-widget-key-feature-widget-style-1-c11cb4782b81">
+              <div class="knowledge-box">
+                <img alt="Gamification" data-src="https://hubilo.com/wp-content/uploads/Group-15975.png"
+                  class="thumb ls-is-cached lazyloaded" src="https://hubilo.com/wp-content/uploads/Group-15975.png">
+                <h3 class="keyFeatureTitle">Gamification</h3>
+                <div class="so-widget-button-widget so-widget-button-widget-style1-f6ae5d26ae51"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w3-row w3-padding-32" id="live-sessions">
+        <div class="w3-col m6 w3-padding-large w3-hide-small">
+          <img src="/istockphoto-live.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600"
+            height="750">
+        </div>
+
+        <div class="w3-col m6 w3-padding-large">
+          <h1 class="left">Inbuilt Interactive Live Sessions</h1>
+          <p class="sow-sub-headline">Virtual Event Sessions are specific speaker sessions that can be hosted virtually
+            in real-time or can be accessed on-demand elevating the attendee experience.</p>
+          <div class="headline-button-area">
+            <span>
+              <div class="so-widget-button-widget so-widget-button-widget-style1-f6ae5d26ae51"></div>
+            </span>
+            <div id="panel-4729-4-2-1" class="so-panel widget widget_feature-with-icons-widget panel-last-child"
+              data-index="12">
+              <div
+                class="so-widget-feature-with-icons-widget so-widget-feature-with-icons-widget-feature-with-icons-widget-style-1-ed71f5139615">
+                <div class="listing-with-img">
+                  <ul>
+                    <li>View Agenda Wise and Multi Track Sessions</li>
+
+                    <li>Host Live On-demand sessions</li>
+
+                    <li>Host Live QnA, Live chat and conduct live polls</li>
+
+                    <li>Host Digital Keynote Speakers</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <div class="w3-row w3-padding-32" id="breakout-rooms">
+        
+
+        <div class="w3-col m6 w3-padding-large">
+          <h1 class="left">Rooms for breakout and demos</h1>
+          <p class="sow-sub-headline">Host virtual event & organize breakout sessions for your attendees. Provide your
+            premium exhibitors access to Demo rooms in order to provide leads with engaging virtual demos.</p>
+          <div class="headline-button-area">
+            <span>
+              <div class="so-widget-button-widget so-widget-button-widget-style1-f6ae5d26ae51"></div>
+            </span>
+            <div id="panel-4729-4-2-1" class="so-panel widget widget_feature-with-icons-widget panel-last-child"
+              data-index="12">
+              <div
+                class="so-widget-feature-with-icons-widget so-widget-feature-with-icons-widget-feature-with-icons-widget-style-1-ed71f5139615">
+                <div class="listing-with-img">
+                  <ul>
+                    <li>Group Video Meetings for Breakout sessions</li>
+
+                    <li>Moderator control can also be given to hosts or moderators</li>
+
+                    <li>Room display visibility can be controlled</li>
+
+                    <li>Demo Rooms Provision to premium exhibitors</li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col m6 w3-padding-large w3-hide-small">
+          <img src="/breakout-room.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600"
+            height="750">
+        </div>
+      </div>
+
+
+      <div class="w3-row w3-padding-32" id="virtual-booths">
+        <div class="w3-col m6 w3-padding-large w3-hide-small">
+          <img src="/booth.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600"
+            height="750">
+        </div>
+
+        <div class="w3-col m6 w3-padding-large">
+          <h1 class="left">Virtual Booths</h1>
+          <p class="sow-sub-headline">Virtual booths are another unique proposition of the product that provides
+            sponsors and exhibitors with an online space to market their product or service.
+          </p>
+          <div class="headline-button-area">
+            <span>
+              <div class="so-widget-button-widget so-widget-button-widget-style1-f6ae5d26ae51"></div>
+            </span>
+            <div id="panel-4729-4-2-1" class="so-panel widget widget_feature-with-icons-widget panel-last-child"
+              data-index="12">
+              <div
+                class="so-widget-feature-with-icons-widget so-widget-feature-with-icons-widget-feature-with-icons-widget-style-1-ed71f5139615">
+                <div class="listing-with-img">
+                  <ul>
+                    <li>Attendees can search, filter and sort Exhibitor & Sponsor Profiles</li>
+
+                    <li>Exhibitors can host downloadable collaterals</li>
+
+                    <li>Exhibitors can ensure their product marketing and upload marketing videos and images</li>
+
+                    <!-- <li>Demo Rooms Provision to premium exhibitors</li> -->
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-row w3-padding-32" id="one-on-one">
+        
+
+        <div class="w3-col m6 w3-padding-large">
+          <h1 class="left">Lounge for one on one meets</h1>
+          <p class="sow-sub-headline">Virtual booths are another unique proposition of the product that provides
+            sponsors and exhibitors with an online space to market their product or service.
+          </p>
+          <div class="headline-button-area">
+            <span>
+              <div class="so-widget-button-widget so-widget-button-widget-style1-f6ae5d26ae51"></div>
+            </span>
+            <div id="panel-4729-4-2-1" class="so-panel widget widget_feature-with-icons-widget panel-last-child"
+              data-index="12">
+              <div
+                class="so-widget-feature-with-icons-widget so-widget-feature-with-icons-widget-feature-with-icons-widget-style-1-ed71f5139615">
+                <div class="listing-with-img">
+                  <ul>
+                    <li>Allow attendees to set one-on-one meeting</li>
+                    <li>Group meetings upto 4 people can be done</li>
+
+                    <li>Brand your networking lounge for sponsors and exhibitors</li>
+
+                    <li>Reserve seats in advance for sponsors</li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col m6 w3-padding-large w3-hide-small">
+          <img src="/meeting.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+        </div>
+      </div>
+
+      <div class="w3-row w3-padding-32" id="networking">
+        <div class="w3-col m6 w3-padding-large w3-hide-small">
+          <img src="/networking.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600"
+            height="750">
+        </div>
+
+        <div class="w3-col m6 w3-padding-large">
+          <h1 class="left">Engagement & Networking</h1>
+          <p class="sow-sub-headline">Most online events are basically webinars while Hubilo’s unique proposition is the
+            ability to have many to many interactions just like real life events.
+          </p>
+          <div class="headline-button-area">
+            <span>
+              <div class="so-widget-button-widget so-widget-button-widget-style1-f6ae5d26ae51"></div>
+            </span>
+            <div id="panel-4729-4-2-1" class="so-panel widget widget_feature-with-icons-widget panel-last-child"
+              data-index="12">
+              <div
+                class="so-widget-feature-with-icons-widget so-widget-feature-with-icons-widget-feature-with-icons-widget-style-1-ed71f5139615">
+                <div class="listing-with-img">
+                  <ul>
+                    <li>Smart Matchmaking</li>
+                    <li>Access and filter attendee list</li>
+
+                    <li>Scheduled one on one video meetings and chats</li>
+
+                    <li>Demo Rooms Provision to premium exhibitors</li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-row w3-padding-32" id="gamification">
+        
+
+        <div class="w3-col m6 w3-padding-large">
+          <h1 class="left">Gamify the entire experience</h1>
+          <p class="sow-sub-headline">Add zing to your virtual event and gamify it with Hubilo. Incorporate gamification
+            features in real-time and create a fun & memorable experience.
+          </p>
+          <div class="headline-button-area">
+            <span>
+              <div class="so-widget-button-widget so-widget-button-widget-style1-f6ae5d26ae51"></div>
+            </span>
+            <div id="panel-4729-4-2-1" class="so-panel widget widget_feature-with-icons-widget panel-last-child"
+              data-index="12">
+              <div
+                class="so-widget-feature-with-icons-widget so-widget-feature-with-icons-widget-feature-with-icons-widget-style-1-ed71f5139615">
+                <div class="listing-with-img">
+                  <ul>
+                    <li>Create Quiz, photo, video or selfie contests and encourage Attendee participation</li>
+                    <li>Activate leaderboard for virtual communities</li>
+
+                    <li>Assign points to different activities</li>
+
+                    <li>Reward attendee activities and actions </li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col m6 w3-padding-large w3-hide-small">
+          <img src="/gamification.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600"
+            height="750">
+        </div>
+      </div>
+
+      <div class="w3-row w3-padding-32" id="event-tickets">
+        <h2 class="w3-wide">Upcoming Events</h2>
+        <div class="w3-col m6 w3-padding-large w3-hide-small">
+        <div class="card event-schedule rounded border">
+          <div class="card-body">
+            <div class="media">
+              <ul class="date text-center text-primary mr-3 mb-0 list-unstyled">
+                <li class="day font-weight-bold mb-2">15</li>
+                <li class="month font-weight-bold">DEC</li>
+              </ul>
+              <div class="media-body content">
+                <h4><a href="javascript:void(0)" class="text-dark title">Winter Startup Summit</a></h4>
+                <p class="text-muted location-time"><span class="text-dark h6">Time:</span>
+                  10:30 AM TO 5.00 PM</p>
+                <a href="#tickets" class="btn btn-sm btn-outline-primary mouse-down">Join</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="w3-col m6 w3-padding-large w3-hide-small">
+          <div class="card event-schedule rounded border">
+            <div class="card-body">
+              <div class="media">
+                <ul class="date text-center text-primary mr-3 mb-0 list-unstyled">
+                  <li class="day font-weight-bold mb-2">3</li>
+                  <li class="month font-weight-bold">JAN</li>
+                </ul>
+                <div class="media-body content">
+                  <h4><a href="javascript:void(0)" class="text-dark title">Upcoming Technlogies 2021
+                  </a></h4>
+                  <p class="text-muted location-time"><span class="text-dark h6">Time:</span>
+                    10:30 AM TO 2.00 PM</p>
+                  <a href="#tickets" class="btn btn-sm btn-outline-primary mouse-down">Buy Ticket</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="w3-col m6 w3-padding-large w3-hide-small">
+            <div class="card event-schedule rounded border">
+              <div class="card-body">
+                <div class="media">
+                  <ul class="date text-center text-primary mr-3 mb-0 list-unstyled">
+                    <li class="day font-weight-bold mb-2">25</li>
+                    <li class="month font-weight-bold">JAN</li>
+                  </ul>
+                  <div class="media-body content">
+                    <h4><a href="javascript:void(0)" class="text-dark title">Building a MVP()
+                    </a></h4>
+                    <p class="text-muted location-time"><span class="text-dark h6">Time:</span>
+                      11.00 AM TO 1.00 PM</p>
+                    <a href="#tickets" class="btn btn-sm btn-outline-primary mouse-down">Register</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="w3-col m6 w3-padding-large w3-hide-small">
+              <div class="card event-schedule rounded border">
+                <div class="card-body">
+                  <div class="media">
+                    <ul class="date text-center text-primary mr-3 mb-0 list-unstyled">
+                      <li class="day font-weight-bold mb-2">31</li>
+                      <li class="month font-weight-bold">JAN</li>
+                    </ul>
+                    <div class="media-body content">
+                      <h4><a href="javascript:void(0)" class="text-dark title">Solving fisheries problems using technology</a></h4>
+                      <p class="text-muted location-time"><span class="text-dark h6">Time:</span>
+                        11:30 AM TO 2.00 PM</p>
+                      <a href="#tickets" class="btn btn-sm btn-outline-primary mouse-down">Buy Ticket</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+      </div>
+
+    </div>
+
+    
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="w3-container w3-center w3-black w3-xlarge">
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>
+
+  <script>
+    // Automatic Slideshow - change image every 4 seconds
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 4000);
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    var modal = document.getElementById('ticketModal');
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+
+</html>
